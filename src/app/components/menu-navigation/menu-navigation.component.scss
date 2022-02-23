@@ -1,0 +1,33 @@
+@import "src/sass/abstracts/mixins";
+@import "src/sass/abstracts/variables";
+
+.menu-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5rem;
+
+  &__box {
+
+    &--button {
+      background-color: $color-button-background-1;
+      border-radius: 1.5rem;
+      height: 41rem;
+      justify-content: space-evenly;
+      width: 40.5rem;
+
+      @include column-layout;
+
+      &--text {
+        font-size: $font-size-normal;
+      }
+    }
+  }
+
+}
+
+.row {
+  margin: 0 !important;
+  .col-5 {
+    padding-left: 0;
+  }
+}

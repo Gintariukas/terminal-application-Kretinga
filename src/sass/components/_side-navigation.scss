@@ -1,0 +1,60 @@
+@import "src/sass/abstracts/mixins";
+@import "src/sass/abstracts/variables";
+
+.side-navigation-box {
+  height: 70vh;
+  justify-content: space-between;
+  text-align: center;
+
+  @include column-layout;
+
+  &__home {
+    height: 3vh;
+    margin-top: 3rem;
+
+    img {
+      height: inherit;
+      width: auto;
+    }
+  }
+
+  &__languages {
+
+    @include column-layout;
+
+    &--button {
+      background-color: $color-blue-light;
+      border: 2px solid $color-blue-light;
+      box-shadow: 0 8px 10px 0 rgb(0 0 0 / 30%), inset 0 4px 1px 1px white, inset 0 -3px 1px 1px rgb(204 198 197 / 50%);
+      border-radius: 50%;
+      color: $color-black;
+      font-size: $font-size-small;
+      height: $button-round-height;
+      width: $button-round-width;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__disability {
+    @include column-layout;
+
+    &--button {
+      background-color: transparent;
+      height: $button-round-height;
+      width: $button-round-width;
+      border: none;
+
+      img {
+        height: inherit;
+        width: auto;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

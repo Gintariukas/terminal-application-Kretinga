@@ -1,0 +1,16 @@
+@import "src/sass/abstracts/variables";
+
+.content-layout {
+  display: flex;
+  height: 70vh;
+
+  &__navigation {
+    background-color: $color-blue-medium;
+    width: 10vw;
+  }
+
+  &__content {
+    width: 90vw;
+    background-color: $color-blue-dark;
+  }
+}

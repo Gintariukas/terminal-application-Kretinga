@@ -1,0 +1,25 @@
+@import "src/sass/abstracts/variables";
+
+.headline {
+  background-color: $color-button-background-1;
+  display: flex;
+  height: 28rem;
+  border-radius: 1.5rem;
+  width: 80vw;
+  margin: 6rem auto auto auto;
+
+  &__image {
+    background-image: url("../../../assets/img/mockup-data/headline-image.jpeg");
+    background-size: cover;
+    border-radius: 1.5rem;
+    margin: 3rem;
+    width: 50%;
+  }
+
+  &__text {
+    align-items: center;
+    display: flex;
+    font-size: $font-size-normal;
+    padding-left: 3rem;
+  }
+}

@@ -1,0 +1,57 @@
+@import "src/sass/abstracts/variables";
+
+.header {
+  align-items: center;
+  background-color: $color-blue-medium;
+  color: $color-white;
+  display: flex;
+  height: 5vh;
+  justify-content: space-between;
+  width: 100%;
+  font-size: $font-size-normal;
+  padding: 0 3rem 0 2rem;
+
+  &__logo {
+    width: 10vw;
+
+    &--image {
+      width: 100%;
+    }
+  }
+
+  &__information-block {
+    display: flex;
+    align-items: center;
+
+    &--date {
+      font-size: $font-size-small;
+      margin-right: 2rem;
+      margin-top: .8rem;
+    }
+
+    &--time {
+      margin-right: 2rem;
+    }
+
+    &--weather {
+      display: flex;
+
+      &--temperature {
+        font-size: $font-size-small;
+        margin-top: .8rem;
+      }
+
+      &--icon {
+        height: 2.5vh;
+        margin-top: -1rem;
+        margin-left: 2rem;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+
+}

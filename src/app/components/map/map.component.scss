@@ -1,0 +1,9 @@
+@import "src/sass/abstracts/variables";
+
+.map {
+  background-color: $color-white;
+  border-radius: 1.5rem;
+  height: 40rem;
+  margin: 6rem auto auto auto;
+  width: 80vw;
+}
